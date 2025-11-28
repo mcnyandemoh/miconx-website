@@ -5,33 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miconx IT Consulting & Training</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
-        header { background: #0073e6; color: white; padding: 20px; }
-        nav { background: #005bb5; padding: 10px; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-size: 18px; }
-        section { padding: 20px; }
-        .services, .portfolio { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-        .service-item, .portfolio-item { width: 300px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; }
-        img { width: 100%; height: auto; border-radius: 8px; }
-        footer { background: #333; color: white; padding: 10px; margin-top: 20px; }
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            text-align: center; 
+            background: #f8f8f8;
+        }
+        header { 
+            background: #0073e6; 
+            color: white; 
+            padding: 40px 10px; 
+        }
+        nav { 
+            background: #005bb5; 
+            padding: 12px; 
+        }
+        nav a { 
+            color: white; 
+            margin: 0 15px; 
+            text-decoration: none; 
+            font-size: 18px; 
+            font-weight: 500;
+        }
+        section { 
+            padding: 30px 15px; 
+            max-width: 1000px; 
+            margin: auto; 
+        }
+        .services, .portfolio { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 25px; 
+        }
+        .service-item, .portfolio-item { 
+            width: 300px; 
+            border: 1px solid #ddd; 
+            padding: 15px; 
+            border-radius: 10px; 
+            background: white;
+        }
+        img { 
+            width: 100%; 
+            height: auto; 
+            border-radius: 8px; 
+        }
+        iframe {
+            border-radius: 10px;
+        }
+        footer { 
+            background: #333; 
+            color: white; 
+            padding: 15px; 
+            margin-top: 40px; 
+        }
     </style>
 </head>
 <body>
+
     <header>
         <h1>Miconx IT Consulting & Training</h1>
-        <h2>Henry N. Hodge, IT Consultant</h2>
+        <h2>Henry N. Hodge — IT Consultant</h2>
     </header>
     
     <nav>
-        <a href="#about">About </a>
+        <a href="#about">About</a>
         <a href="#services">Our Services</a>
         <a href="#portfolio">Portfolio</a>
-        <a href="#cv"> CV</a>
-        <a href="#contact">Contact Me</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
     </nav>
     
     <section id="about">
-        <h2>About </h2>
+        <h2>About</h2>
         <p>Miconx provides cutting-edge IT solutions and consulting services to businesses, individuals, and organizations. With expertise in system administration, networking, and IT infrastructure, we empower our clients with reliable and innovative technology solutions.</p>
     </section>
     
@@ -52,50 +99,67 @@
         <h2>Some of My Work</h2>
         <div class="portfolio">
 
-            <!-- New Starlink Installation Section -->
+            <!-- NEW Starlink Installation -->
             <div class="portfolio-item">
                 <img src="starlink-2.jpg" alt="Starlink installation">
-                <p>Professionally mounting Starlink equipment to ensure optimal signal reception and stable performance. The installation process is handled with precision, positioning the Dish to achieve maximum connectivity in demanding environments.</p>
+                <h3>Mounting Starlink</h3>
+                <p>Professionally installing Starlink satellite equipment with high accuracy and alignment, ensuring maximum signal reception and improved connectivity for remote sites.</p>
             </div>
 
-            <!-- New Final Result Section -->
+            <!-- NEW Starlink Final Result -->
             <div class="portfolio-item">
                 <img src="final shoot.jpg" alt="Final Starlink setup">
-                <p>The final result of the Starlink deployment. Clean installation, strong mounting foundation, and fully tested connectivity delivering high-speed internet to the site.</p>
+                <h3>Final Setup</h3>
+                <p>Clean, secure, and well-positioned Starlink installation. Tested and verified for high-speed broadband communication with uninterrupted performance.</p>
             </div>
 
-            <!-- Existing Portfolio items -->
+            <!-- NEW Starlink Project Video -->
             <div class="portfolio-item">
-                <img src="server.jpg" alt="Project 1">
-                <p>Built Ubuntu server and set up network infrastructure for JLMCC</p>
+                <h3>Installation Walkthrough</h3>
+                <iframe width="100%" height="200"
+                    src="https://www.youtube.com/embed/RU8RKWkswsw"
+                    title="Starlink Installation Video"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+                <p>Full installation process from mounting to final testing on site.</p>
             </div>
+
+            <!-- Existing Projects -->
             <div class="portfolio-item">
-                <img src="hero.jpg" alt="Project 2">
-                <p>Installed Unifi Network for ESWA</p>
-                <p>Professionally mounting a Ubiquiti Networks LBE-5AC-GEN2 2x2 MIMO airman litebeam Gen 2 5AC 5GHz 23dBi 450+ Mbps CPE with precision and expertise. The image captures the installation process, showcasing structured network deployment for enhanced connectivity.</p>
+                <img src="server.jpg" alt="Ubuntu Server Project">
+                <p>Built an Ubuntu server and set up network infrastructure for JLMCC.</p>
             </div>
+
             <div class="portfolio-item">
-                <img src="unifi network.jpg" alt="Project 3">
-                <p>A detailed view of UniFi hotspots being configured and mounted, along with an AC5 radio setup. The image showcases the process of deploying a robust wireless network infrastructure, ensuring optimal coverage and connectivity.</p>
+                <img src="hero.jpg" alt="LiteBeam Installation">
+                <p>Installed Unifi Network for ESWA, including Ubiquiti LBE-5AC-GEN2 LiteBeam CPE, configured for enterprise-grade wireless connectivity.</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="unifi network.jpg" alt="Unifi Network Deployment">
+                <p>Configured and mounted UniFi hotspots and AC5 radios to provide high-quality wireless coverage across organizational environments.</p>
             </div>
         </div>
     </section>
     
     <section id="cv">
-        <h2>Check out my qualification</h2>
-        <p><a href="https://mcnyandemoh.github.io/cv/">View my CV</a></p>
+        <h2>Check Out My Qualifications</h2>
+        <p><a href="https://mcnyandemoh.github.io/cv/" target="_blank">View my CV here</a></p>
     </section>
     
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>📍 Location: Liberia</p>
-        <p>📞 Contact: +231775453644</p>
-        <p>📧 Email: <a href="mailto:mcnyandemoh@outlook.com">mcnyandemoh@outlook.com</a></p>
-        <p>🌐 Website: <a href="https://www.linkedin.com/in/henry-nyandemoh-513801235/" target="_blank">LinkedIn Profile</a></p>
+        <h2>Contact</h2>
+        <p>📍 Liberia</p>
+        <p>📞 +231775453644</p>
+        <p>📧 <a href="mailto:mcnyandemoh@outlook.com">mcnyandemoh@outlook.com</a></p>
+        <p>🌐 <a href="https://www.linkedin.com/in/henry-nyandemoh-513801235/" target="_blank">LinkedIn Profile</a></p>
     </section>
     
     <footer>
         <p>&copy; 2025 Miconx IT Consulting & Training. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
