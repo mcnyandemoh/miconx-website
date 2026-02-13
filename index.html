@@ -1,166 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miconx IT Consulting </title>
-    <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 0; 
-            padding: 0; 
-            text-align: center; 
-            background: #f8f8f8;
-        }
-        header { 
-            background: #0073e6; 
-            color: white; 
-            padding: 40px 10px; 
-        }
-        nav { 
-            background: #005bb5; 
-            padding: 12px; 
-        }
-        nav a { 
-            color: white; 
-            margin: 0 15px; 
-            text-decoration: none; 
-            font-size: 18px; 
-            font-weight: 500;
-        }
-        section { 
-            padding: 30px 15px; 
-            max-width: 1000px; 
-            margin: auto; 
-        }
-        .services, .portfolio { 
-            display: flex; 
-            flex-wrap: wrap; 
-            justify-content: center; 
-            gap: 25px; 
-        }
-        .service-item, .portfolio-item { 
-            width: 300px; 
-            border: 1px solid #ddd; 
-            padding: 15px; 
-            border-radius: 10px; 
-            background: white;
-        }
-        img { 
-            width: 100%; 
-            height: auto; 
-            border-radius: 8px; 
-        }
-        iframe {
-            border-radius: 10px;
-        }
-        footer { 
-            background: #333; 
-            color: white; 
-            padding: 15px; 
-            margin-top: 40px; 
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miconx IT Consulting | Henry N. Hodge</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #0a3d62, #1e3799);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+nav {
+    background: #0c2461;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f6b93b;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #0a3d62;
+}
+
+.services, .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 320px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #0c2461;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer p {
+    opacity: 0.8;
+}
+
+.about-text {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+a.button-link {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #1e3799;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+a.button-link:hover {
+    background: #f6b93b;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+    .card {
+        width: 100%;
+    }
+}
+</style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Miconx IT Solutions</h1>
-        <h2>Henry N. Hodge — IT Consultant</h2>
-    </header>
-    
-    <nav>
-        <a href="#about">About</a>
-        <a href="#services">Our Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#cv">CV</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    
-    <section id="about">
-        <h2>About</h2>
-        <p>Miconx provides cutting-edge IT solutions and consulting services to businesses, individuals, and organizations. With expertise in system administration, networking, and IT infrastructure, we empower our clients with reliable and innovative technology solutions.</p>
-    </section>
-    
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="services">
-            <div class="service-item">IT Consulting & System Administration</div>
-            <div class="service-item">Network Infrastructure & Security</div>
-            <div class="service-item">Enterprise IT Solutions</div>
-            <div class="service-item">Healthcare IT & EMR Implementation</div>
-            <div class="service-item">IT Training & Capacity Building</div>
-            <div class="service-item">Hardware & Software Procurement and Installation</div>
-            <div class="service-item">Computer Repair (Hardware & Software)</div>
+<header>
+    <h1>Miconx IT Solutions</h1>
+    <h2>Henry N. Hodge — IT Consultant</h2>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#eswa-lab">ESWA Lab</a>
+    <a href="#eswa-starlink">ESWA Starlink</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Miconx</h2>
+    <p class="about-text">
+        Miconx provides cutting-edge IT solutions and consulting services to businesses, 
+        individuals, and organizations. With expertise in system administration, networking, 
+        infrastructure deployment, and enterprise solutions, we empower clients with 
+        reliable, scalable, and secure technology systems.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="card">IT Consulting & System Administration</div>
+        <div class="card">Network Infrastructure & Security</div>
+        <div class="card">Enterprise IT Solutions</div>
+        <div class="card">Healthcare IT & EMR Implementation</div>
+        <div class="card">IT Training & Capacity Building</div>
+        <div class="card">Hardware & Software Procurement & Installation</div>
+        <div class="card">Computer Repair (Hardware & Software)</div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2>Highlighted Projects</h2>
+    <div class="portfolio">
+
+        <div class="card">
+            <img src="starlink-2.jpg" alt="Starlink installation">
+            <h3>Starlink Mounting</h3>
+            <p>Professional installation and alignment ensuring maximum signal reception for remote connectivity.</p>
         </div>
-    </section>
-    
-    <section id="portfolio">
-        <h2>Some of My Work</h2>
-        <div class="portfolio">
 
-            <!-- NEW Starlink Installation -->
-            <div class="portfolio-item">
-                <img src="starlink-2.jpg" alt="Starlink installation">
-                <h3>Mounting Starlink</h3>
-                <p>Professionally installing Starlink satellite equipment with high accuracy and alignment, ensuring maximum signal reception and improved connectivity for remote sites.</p>
-            </div>
-
-            <!-- NEW Starlink Final Result -->
-            <div class="portfolio-item">
-                <img src="final shoot.jpg" alt="Final Starlink setup">
-                <h3>Final Setup</h3>
-                <p>Clean, secure, and well-positioned Starlink installation. Tested and verified for high-speed broadband communication with uninterrupted performance.</p>
-            </div>
-
-            <!-- NEW Starlink Project Video -->
-            <div class="portfolio-item">
-                <h3>Installation Walkthrough</h3>
-                <iframe width="100%" height="200"
-                    src="https://www.youtube.com/embed/RU8RKWkswsw"
-                    title="Starlink Installation Video"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
-                <p>Full installation process from mounting to final testing on site.</p>
-            </div>
-
-            <!-- Existing Projects -->
-            <div class="portfolio-item">
-                <img src="server.jpg" alt="Ubuntu Server Project">
-                <p>Built an Ubuntu server and set up network infrastructure for JLMCC.</p>
-            </div>
-
-            <div class="portfolio-item">
-                <img src="hero.jpg" alt="LiteBeam Installation">
-                <p>Installed Unifi Network for ESWA, including Ubiquiti LBE-5AC-GEN2 LiteBeam CPE, configured for enterprise-grade wireless connectivity.</p>
-            </div>
-
-            <div class="portfolio-item">
-                <img src="unifi network.jpg" alt="Unifi Network Deployment">
-                <p>Configured and mounted UniFi hotspots and AC5 radios to provide high-quality wireless coverage across organizational environments.</p>
-            </div>
+        <div class="card">
+            <img src="final shoot.jpg" alt="Final Starlink setup">
+            <img src="final-setup-2.jpg" alt="Additional Final Setup View">
+            <h3>Final Setup</h3>
+            <p>Clean, secure, and performance-tested Starlink installation delivering stable broadband connectivity.</p>
         </div>
-    </section>
-    
-    <section id="cv">
-        <h2>Check Out My Qualifications</h2>
-        <p><a href="https://mcnyandemoh.github.io/cv/" target="_blank">View my CV here</a></p>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
+
+        <div class="card">
+            <h3>Installation Walkthrough</h3>
+            <iframe src="https://www.youtube.com/embed/RU8RKWkswsw"
+            allowfullscreen></iframe>
+            <p>Complete project walkthrough from mounting to testing.</p>
+        </div>
+
+        <div class="card">
+            <img src="server.jpg" alt="Ubuntu Server Project">
+            <p>Built Ubuntu server and configured network infrastructure for JLMCC.</p>
+        </div>
+
+        <div class="card">
+            <img src="hero.jpg" alt="LiteBeam Installation">
+            <p>Installed UniFi and LiteBeam systems for enterprise-grade wireless connectivity at ESWA.</p>
+        </div>
+
+        <div class="card">
+            <img src="unifi network.jpg" alt="Unifi Network Deployment">
+            <p>Configured and deployed UniFi hotspots and AC5 radios across institutional environments.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="eswa-lab">
+    <h2>ESWA Computer Lab Completed</h2>
+    <div class="portfolio">
+        <div class="card">
+            <img src="eswa-lab.jpg" alt="ESWA Lab Zorin OS">
+            <h3>Full Lab Deployment</h3>
+            <p>Deployed and configured all ESWA lab computers running Zorin OS, optimized for educational productivity, security, and performance.</p>
+        </div>
+    </div>
+</section>
+
+<section id="eswa-starlink">
+    <h2>ESWA Starlink Reconfigured & Aligned</h2>
+    <div class="portfolio">
+        <div class="card">
+            <img src="eswa-starlink-1.jpg" alt="Starlink Alignment">
+            <h3>Signal Realignment</h3>
+            <p>Reconfigured and precisely aligned Starlink system to improve connectivity and reduce signal interruptions.</p>
+        </div>
+
+        <div class="card">
+            <img src="eswa-starlink-2.jpg" alt="Starlink Testing">
+            <h3>Performance Testing</h3>
+            <p>Optimized bandwidth distribution and performed full diagnostics to ensure stable internet across campus.</p>
+        </div>
+    </div>
+</section>
+
+<section id="cv">
+    <h2>Professional Qualifications</h2>
+    <div style="text-align:center;">
+        <a href="https://mcnyandemoh.github.io/cv/" target="_blank" class="button-link">
+            View My CV
+        </a>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
         <p>📍 Liberia</p>
         <p>📞 +231775453644</p>
         <p>📧 <a href="mailto:mcnyandemoh@outlook.com">mcnyandemoh@outlook.com</a></p>
         <p>🌐 <a href="https://www.linkedin.com/in/henry-nyandemoh-513801235/" target="_blank">LinkedIn Profile</a></p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Miconx IT Consulting & Training. All rights reserved.</p>
-    </footer>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Miconx IT Consulting & Training. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
-
